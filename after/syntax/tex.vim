@@ -217,6 +217,7 @@ syn match texMathSymbol '\\sqrt\[4]' contained conceal cchar=∜
 syn match texMathSymbol '\\\!' contained conceal
 syn match texMathSymbol '\\therefore' contained conceal cchar=∴
 syn match texMathSymbol '\\because' contained conceal cchar=∵
+syn match texMathSymbol '\\sphericalangle' contained conceal cchar=∢
 
 if !exists('g:tex_conceal_frac')
   let g:tex_conceal_frac = 0
