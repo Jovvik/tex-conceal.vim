@@ -45,6 +45,12 @@ syn match texMathSymbol '\\mathbb{\s*X\s*}' contained conceal cchar=𝕏
 syn match texMathSymbol '\\mathbb{\s*Y\s*}' contained conceal cchar=𝕐
 syn match texMathSymbol '\\mathbb{\s*Z\s*}' contained conceal cchar=ℤ
 
+" \mathbb character shortcuts
+syn match texMathSymbol '\\N' contained conceal cchar=ℕ
+syn match texMathSymbol '\\Z' contained conceal cchar=ℤ
+syn match texMathSymbol '\\Q' contained conceal cchar=ℚ
+syn match texMathSymbol '\\R' contained conceal cchar=ℝ
+
 " \mathsf characters
 syn match texMathSymbol '\\mathsf{\s*a\s*}' contained conceal cchar=𝖺
 syn match texMathSymbol '\\mathsf{\s*b\s*}' contained conceal cchar=𝖻
@@ -290,7 +296,7 @@ call s:SuperSub('\^','e','ᵉ')
 call s:SuperSub('\^','f','ᶠ')
 call s:SuperSub('\^','g','ᵍ')
 call s:SuperSub('\^','h','ʰ')
-call s:SuperSub('\^','i','ⁱ')
+" call s:SuperSub('\^','i','ⁱ') " this one is broken in my font
 call s:SuperSub('\^','j','ʲ')
 call s:SuperSub('\^','k','ᵏ')
 call s:SuperSub('\^','l','ˡ')
