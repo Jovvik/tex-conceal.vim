@@ -183,6 +183,8 @@ syn match texMathSymbol '\\math\%(scr\|cal\){\s*Z\s*}' contained conceal cchar=�
 
 syn match texSpecialChar '\\#' contained conceal cchar=#
 
+syn match texStatement '\\begin' contained conceal cchar=▼
+syn match texStatement '\\end' contained conceal cchar=▲
 syn match texStatement '``' contained conceal cchar=“
 syn match texStatement '\'\'' contained conceal cchar=”
 syn match texStatement '\\item\>' contained conceal cchar=•
