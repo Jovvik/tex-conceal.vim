@@ -203,6 +203,7 @@ syn match texDelimiter '\\{' contained conceal cchar={
 syn match texDelimiter '\\}' contained conceal cchar=}
 syn match texMathSymbol '\\setminus\>' contained conceal cchar=\
 syn match texMathSymbol '\\coloneqq\>' contained conceal cchar=≔
+syn match texMathSymbol '\\eqqcolon\>' contained conceal cchar=≕
 syn match texMathSymbol '\\colon\>' contained conceal cchar=:
 syn match texMathSymbol '\\:' contained conceal cchar= 
 syn match texMathSymbol '\\;' contained conceal cchar= 
