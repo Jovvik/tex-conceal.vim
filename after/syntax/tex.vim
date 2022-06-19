@@ -268,7 +268,7 @@ else
   let s:tex_superscripts= g:tex_superscripts
 endif
 if !exists("g:tex_subscripts")
-  let s:tex_subscripts= "[0-9aeijoruvx,+-/().]"
+  let s:tex_subscripts= "[0-9aeijnmoruvx,+-/().]"
 else
   let s:tex_subscripts= g:tex_subscripts
 endif
@@ -303,7 +303,7 @@ call s:SuperSub('\^','j','ʲ')
 call s:SuperSub('\^','k','ᵏ')
 call s:SuperSub('\^','l','ˡ')
 call s:SuperSub('\^','m','ᵐ')
-call s:SuperSub('\^','n','ⁿ')
+" call s:SuperSub('\^','n','ⁿ') " this one is broken in my font
 call s:SuperSub('\^','o','ᵒ')
 call s:SuperSub('\^','p','ᵖ')
 call s:SuperSub('\^','r','ʳ')
